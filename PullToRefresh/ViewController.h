@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+//Instance methods of the UIKit componets
+// UITableView
+// UIButton
+
+@property (weak, nonatomic) IBOutlet UITableView *dataTableView;
+
+- (IBAction)addItemButton:(id)sender;
 
 @end
